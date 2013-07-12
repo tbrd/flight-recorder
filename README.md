@@ -2,7 +2,7 @@
 
 [![Build Status](https://secure.travis-ci.org/<username>/flight-recorder.png)](http://travis-ci.org/<username>/flight-recorder)
 
-A [Flight](https://github.com/twitter/flight) component for…
+A [Flight](https://github.com/twitter/flight) component for simple undo
 
 ## Installation
 
@@ -12,7 +12,23 @@ bower install --save flight-recorder
 
 ## Example
 
-…
+
+```javascript
+this.trigger('recorder-register', {
+  eventName: 'some-event'
+});
+
+this.trigger('some-event', {
+  undo: {
+    eventName: 'some-other-event',
+    data: {
+      …
+    }
+  }
+}
+
+this.trigger('recorder-undo'); // undo last event in history
+```
 
 ## Development
 
