@@ -1,8 +1,11 @@
 # flight-recorder
 
-[![Build Status](https://secure.travis-ci.org/<username>/flight-recorder.png)](http://travis-ci.org/<username>/flight-recorder)
+[![Build 
+Status](https://secure.travis-ci.org/tbrd/flight-recorder.png)](http://travis-ci.org/tbrd/flight-recorder)
 
-A [Flight](https://github.com/twitter/flight) component for simple undo
+A [Flight](https://github.com/twitter/flight) component for simple undo. 
+Register events with flight-recorder and pass event to action to perform 
+undo
 
 ## Installation
 
